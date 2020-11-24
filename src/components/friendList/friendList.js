@@ -1,18 +1,11 @@
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import FriendListItem from './friendListItem';
-
-
-const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-`;
+import List from './friendListStyles';
 
 const FriendList = ({ friends }) => {
     return (
         <List>
-            <FriendListItem friends={friends}></FriendListItem>
+            <FriendListItem friends={friends}/>
         </List>
     )
 };

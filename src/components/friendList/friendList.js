@@ -6,7 +6,7 @@ const FriendList = ({ friends }) => {
     return (
         friends.length > 0 && (
             <List>
-                <FriendListItem friends={friends} />
+                {friends.map(FriendListItem)}
             </List>
         )
     )

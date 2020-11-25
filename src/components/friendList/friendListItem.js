@@ -1,16 +1,14 @@
 import PropTypes from 'prop-types';
 import { Item, IsOnline, Img, Name } from './friendListItemStyles'
 
-const FriendListItem = ({ friends }) => {
-    return (
-        friends.map(({ id, isOnline, avatar, name }) => (
-            <Item key={id}>
-                {<IsOnline isOnline={isOnline} />}
-                <Img src={avatar} alt={name} />
-                <Name>{name}</Name>
-            </Item>
-        ))
-    )
+const FriendListItem = ({ id, isOnline, avatar, name }) => {
+  return (
+      <Item key={id}>
+        {<IsOnline isOnline={isOnline} />}
+        <Img src={avatar} alt={name} />
+        <Name>{name}</Name>
+      </Item>
+  )
 };
 
 FriendListItem.propTypes = {

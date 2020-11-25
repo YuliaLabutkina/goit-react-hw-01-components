@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import defaultImg from '../../img/not_found.jpg';
 import { DescriptionWrap, Img, Name, Tag, Location } from './descriptionStyles';
 
 const Description = ({ name, tag, location, avatar }) => {
@@ -10,7 +11,7 @@ const Description = ({ name, tag, location, avatar }) => {
         />
         <Name>{name}</Name>
         <Tag>@{tag}</Tag>
-        <Location>{location}</Location>
+        {location && <Location>{location}</Location>}
       </DescriptionWrap>
     )
 };
@@ -18,6 +19,7 @@ const Description = ({ name, tag, location, avatar }) => {
 Description.defaultProps = ({
     name: "unknown",
     tag: "unknown",
+    avatar: defaultImg,
 });
 
 Description.propTypes = {

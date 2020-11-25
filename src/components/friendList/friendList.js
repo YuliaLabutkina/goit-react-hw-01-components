@@ -4,9 +4,11 @@ import List from './friendListStyles';
 
 const FriendList = ({ friends }) => {
     return (
-        <List>
-            <FriendListItem friends={friends}/>
-        </List>
+        friends.length > 0 && (
+            <List>
+                <FriendListItem friends={friends} />
+            </List>
+        )
     )
 };
 

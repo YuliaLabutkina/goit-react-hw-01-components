@@ -3,15 +3,13 @@ import { Item, IsOnline, Img, Name } from './friendListItemStyles'
 
 const FriendListItem = ({ friends }) => {
     return (
-        <>
-            {friends.map(({id, isOnline, avatar, name }) => (
-                <Item key={id}>
-                    {<IsOnline isOnline={ isOnline } />}
-                    <Img src={avatar} alt={name} />
-                    <Name>{name}</Name>
-                </Item>
-            ))}
-        </>
+        friends.map(({ id, isOnline, avatar, name }) => (
+            <Item key={id}>
+                {<IsOnline isOnline={isOnline} />}
+                <Img src={avatar} alt={name} />
+                <Name>{name}</Name>
+            </Item>
+        ))
     )
 };
 

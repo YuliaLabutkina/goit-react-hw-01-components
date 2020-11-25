@@ -1,10 +1,10 @@
-import Profile from '../profile/profile'
+import Profile from '../profile'
 import user from '../../data/user.json';
-import Statistics from '../statistics/statistics';
+import Statistics from '../statistics';
 import statistical from '../../data/statistical-data.json';
-import FriendList from '../friendList/friendList';
+import FriendList from '../friendList';
 import friends from '../../data/friends.json';
-import TransactionHistory from '../transactionHistory/transactionHistory';
+import TransactionHistory from '../transactionHistory';
 import items from '../../data/transactions.json';
 import AppWrapper from './appStyles';
 

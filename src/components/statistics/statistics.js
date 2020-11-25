@@ -6,7 +6,7 @@ const Statistics = ({ title, statistical }) => {
     return (
         <SectionWrapper>
             {title && <SectionTitle>{ title }</SectionTitle>}
-            <StatList statistical={statistical}/>
+            {statistical.length > 0 && <StatList statistical={statistical}/>}
         </SectionWrapper>
     )
 };

@@ -6,10 +6,12 @@ import Container from './profileStyles';
 const Profile = ({ user }) => {
   const { stats, ...descriptionProps } = user;
   return (
-  <Container>
-      <Description {...descriptionProps}/>
-      <Stats {...stats}/>
-  </Container>
+    user && (
+      <Container>
+        <Description {...descriptionProps}/>
+        <Stats {...stats}/>
+      </Container>
+    )
   )
 };
 

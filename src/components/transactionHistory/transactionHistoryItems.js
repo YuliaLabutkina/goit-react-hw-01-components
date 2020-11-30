@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { TableRow, TableCell } from './transactionHistoryItemsStyles';
+import { TableRow, TableCell } from './TransactionHistoryItemsStyles';
 
 const TransactionHistoryItems = ({ items }) => {
   if (items.length === 0) return null;

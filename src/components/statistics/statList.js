@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import RGB from './randomRGB';
-import { StatisticalList, Item, ItemLabel, ItemPercentage } from './statListStyles';
+import { StatisticalList, Item, ItemLabel, ItemPercentage } from './StatListStyles';
 
 const StatList = ({ statistical }) => {
   return (

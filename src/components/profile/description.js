@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import defaultImg from '../../img/not_found.jpg';
-import { DescriptionWrap, Img, Name, Tag, Location } from './descriptionStyles';
+import { DescriptionWrap, Img, Name, Tag, Location } from './DescriptionStyles';
 
 const Description = ({ name, tag, location, avatar }) => {
     return (

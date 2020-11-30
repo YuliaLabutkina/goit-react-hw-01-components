@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
-import Description from './description';
-import Stats from './stats';
-import Container from './profileStyles';
+import Description from './Description';
+import Stats from './Stats';
+import Container from './ProfileStyles';
 
 const Profile = ({ user }) => {
   const { stats, ...descriptionProps } = user;

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List, ListItem, ItemLabel, ItemQuantity } from './statsStyles';
+import { List, ListItem, ItemLabel, ItemQuantity } from './StatsStyles';
 
 const Stats = ({ followers, views, likes }) => {
   return (

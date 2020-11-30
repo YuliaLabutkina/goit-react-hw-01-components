@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import StatList from './statList';
-import { SectionWrapper, SectionTitle } from './statisticsStyles';
+import StatList from './StatList';
+import { SectionWrapper, SectionTitle } from './StatisticsStyles';
 
 const Statistics = ({ title, statistical }) => {
     return (

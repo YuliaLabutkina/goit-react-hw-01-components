@@ -1,14 +1,14 @@
-import Profile from '../profile';
-import Statistics from '../statistics';
-import FriendList from '../friendList';
-import TransactionHistory from '../transactionHistory';
+import Profile from '../Profile';
+import Statistics from '../Statistics';
+import FriendList from '../FriendList';
+import TransactionHistory from '../TransactionHistory';
 
 import user from '../../data/user.json';
 import statistical from '../../data/statistical-data.json';
 import friends from '../../data/friends.json';
 import items from '../../data/transactions.json';
 
-import AppWrapper from './appStyles';
+import AppWrapper from './AppStyles';
 
 
 const App = () => {
